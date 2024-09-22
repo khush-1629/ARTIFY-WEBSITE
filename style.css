@@ -1,0 +1,157 @@
+/* Global Styles */
+body, h1, h2, p, button {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: lavender;
+  }
+  
+  /* Section 1: Header */
+  .site-header {
+    background: linear-gradient(to bottom right, lightblue, lavender, lightpink);
+    height: 100vh;
+    text-align: center;
+    padding: 50px;
+    color: lightseagreen;
+    font-size: 2.5rem;
+  }
+  .site-header .quote {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  /* Section 2: Artwork Grid */
+  .artwork-section {
+    height: 100vh;
+    padding: 30px;
+  }
+  .grid-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .heart-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    color: blueviolet;
+  }
+  .artwork-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .artwork-item {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    position: relative;
+  }
+  .artwork-item:hover {
+    transform: scale(1.05);
+  }
+  .artwork-item img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  .artwork-item .info {
+    margin-top: 10px;
+    color: gray;
+  }
+  .artwork-item button {
+    background-color: lavender;
+    border: none;
+    color: grey;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+    font-weight:600;
+  }
+  .artwork-item button:hover {
+    background-color: lightpink;
+    color: white;
+  }
+  
+  /* Section 3: Favourites */
+  .favourites {
+    height: 50vh;
+    padding: 30px;
+    background: linear-gradient(to bottom, lightyellow, lightorange);
+  }
+  .favourites h2 {
+    font-size: 2rem;
+    color: lavender;
+  }
+  .hidden {
+    display: none;
+  }
+  #empty-message {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: gray;
+  }
+  
+  /* Modal */
+  .modal {
+    /* display: none; */
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .modal-content {
+    position: relative;
+  }
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+  }
+  .modal img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  .modal button {
+    margin-top: 20px;
+
+    background-color: lavender;
+    border: none;
+    color: grey;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    /* margin-top: 10px; */
+    transition: background-color 0.3s;
+    font-weight: 600;
+  }
+  .modal button:hover{
+    background-color: lightpink;
+    color: white;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+  }
+  
+  /* Animation for smooth scroll */
+  html {
+    scroll-behavior: smooth;
+  }
+  

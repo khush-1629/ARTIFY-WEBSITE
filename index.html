@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artify</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Section 1: Site Name and Theme -->
+  <section id="header" class="site-header">
+    <h1>Artify</h1>
+    <p class="quote">"Art speaks where words are unable to explain."</p>
+  </section>
+
+  <!-- Section 2: Artwork Grid -->
+  <section id="gallery" class="artwork-section">
+    <div class="grid-header">
+      <h2>Gallery</h2>
+      <span class="heart-icon" onclick="openFavourites()">&#10084;</span>
+    </div>
+    <div class="artwork-grid" id="artwork-grid">
+      <!-- Artwork items will be added dynamically here -->
+    </div>
+  </section>
+
+  <!-- Section 3: Favourites -->
+  <section id="favourites-section" class="favourites hidden">
+    <h2>FAVOURITES</h2>
+    <p id="empty-message">Favourite list is empty</p>
+    <div class="artwork-grid" id="favourites-grid">
+      <!-- Favourite items will be displayed here -->
+    </div>
+  </section>
+
+
+ 
+
+  <!-- Details Modal -->
+  <div id="details-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <img id="modal-image" src="" alt="Artwork">
+      <p id="modal-info"></p>
+      <button id="modal-add-favorite" onclick="addToFavourites()">Add to Favourites</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
